@@ -1,5 +1,5 @@
 const app = Vue.createApp({
-    data() {
+	data() {
         return {
             boxASelected: false,
             boxBSelected: false,
@@ -18,6 +18,17 @@ const app = Vue.createApp({
                 default:
                     break;
             }
+        }
+    },
+    computed: {
+        boxAClasses() {
+            return { selected: this.boxASelected }
+        },
+        boxBClasses() {
+            return { selected: this.boxBSelected }
+        },
+        boxCClasses() {
+            return { selected: this.boxCSelected }
         }
     }
 });
