@@ -19,9 +19,12 @@
     <!-- <div :class="boxASelected ? 'demo selected' : 'demo'" @click="boxSelected('A')"></div>
     <div :class="boxBSelected ? 'demo selected' :'demo'" @click="boxSelected('B')"></div>
     <div :class="boxCSelected ? 'demo selected' : 'demo'" @click="boxSelected('C')"></div> -->
-    <div class="demo" :class="{selected: boxASelected}" @click="boxSelected('A')"></div>
+    <!-- <div class="demo" :class="{selected: boxASelected}" @click="boxSelected('A')"></div>
     <div class="demo" :class="{selected: boxBSelected}" @click="boxSelected('B')"></div>
-    <div class="demo" :class="{selected: boxCSelected}" @click="boxSelected('C')"></div>
+    <div class="demo" :class="{selected: boxCSelected}" @click="boxSelected('C')"></div> -->
+    <div class="demo" :class="boxAClasses" @click="boxSelected('A')"></div>
+    <div class="demo" :class="boxBClasses" @click="boxSelected('B')"></div>
+    <div class="demo" :class="boxCClasses" @click="boxSelected('C')"></div>
   </section>
 </body>
 
